@@ -24,7 +24,7 @@ Install all required Node.js dependencies using the command `npm install`
 3. Compile typescript\
 To compile the project before running, use the command `npm run build`
 4. Start the server \
-Run the Express server using `ts-node src/app.ts`. To verify that the server is running, it will display ```🚀 Server running on port 3000``` 
+Run the Express server using `ts-node src/app.ts`. To verify that the server is running, it will display ```Server running on port 3000``` 
 
 ### API Endpoints 
 ### **1️⃣ Check if a Team Can Redeem (GET)**
@@ -41,27 +41,24 @@ GET /api/redeem/:staffPassId
 ```http://localhost:3000/api/redeem/STAFF_H12345670G```
 | Input                         | Response                                      |
 |--------------------------------|-----------------------------------------------|
-| `STAFF_H1234567` (valid input) | `{ "message": "🎉 Redemption successful for team <team name>!" }`                        |
-| `STAFF_H9999999` (invalid ID)  | `{ "message": "❌ Redemption failed: Already redeemed or staff not found." }`|
-| `STAFF_H1234567` (already redeemed) | `{ "message": "❌ Redemption failed: Already redeemed or staff not found." }` |
+| `STAFF_H1234567` (valid input) | `{ "message": "Redemption successful for team BASS" }`                        |
+| `STAFF_H9999999` (invalid ID)  | `{ "message": "Redemption failed: Staff ID not found." }`|
+| `STAFF_H1234567` (already redeemed) | `{ "message": "Redemption failed: Already redeemed." }` |
 
-
-### **2️⃣ Processing a Redemption (POST)**
-#### **📌 Endpoint**
-```http
-POST /api/redeem/:staffPassId
+### Unit Testing
+This project includes unit testing using JEST for the adopted key functionalities: 
+- Redemption Service (`redemptionService.ts`)
+- CSV File Handling (`fileService.ts`)
+- API Controller (`redemptionController.ts`)
+#### **📌 Running the tests**
+- To execute the test cases, use the following command: 
+```npm test```
+####  **📝 Expected Output*
 ```
-####  **📝 Parameters**
-| Parameter      | Type     | Description                                      | Required |
-|--------------|---------|--------------------------------------------------|----------|
-| `staffPassId` | `string` | The unique staff pass ID of the representative. | yes  |
-
-####  **📝 Example**
-```http://localhost:3000/api/redeem/STAFF_H12345670G```
-| Input                         | Response                                      |
-|--------------------------------|-----------------------------------------------|
-| `STAFF_H1234567` (valid input) | `{ "message": "🎉 Redemption successful for team <team name>!" }`                        |
-| `STAFF_H9999999` (invalid ID)  | `{ "message": "❌ Redemption failed: Already redeemed or staff not found." }`|
-| `STAFF_H1234567` (already redeemed) | `{ "message": "❌ Redemption failed: Already redeemed or staff not found." }` |
+PASS  test/redemptionService.test.ts
+PASS  test/fileService.test.ts
+PASS  test/redemptionController.test.ts
+PASS  test/writeRedemption.test.ts
+```
 
 
