@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
       "build": "tsc",
+      "postbuild": "mkdir -p dist/data && cp -r src/data/* dist/data/",
+
   "start": "node dist/app.js"
   },
   "keywords": [],
