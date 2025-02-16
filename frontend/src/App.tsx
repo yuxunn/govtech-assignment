@@ -13,7 +13,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch(`${API_BASE_URL}/redeem/${staffPassId}`);
+      const response = await fetch(`${API_BASE_URL}/api/redeem/${staffPassId}`);
       const data = await response.json();
       setMessage(data.message);
     } catch (error) {

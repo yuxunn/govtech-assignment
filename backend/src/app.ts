@@ -6,13 +6,12 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-    origin: "*", 
-    methods: "GET,POST,OPTIONS", // Ensure preflight requests are handled
+    origin: "https://govtech-assignment.vercel.app", 
+    methods: "GET,POST,OPTIONS", 
     allowedHeaders: "Content-Type,Authorization",
-    credentials: true // Allow credentials if needed
+    credentials: true 
 }));
 app.use(express.json());
-app.options("*", cors());
 
 app.get("/", (req, res) => {
     res.send("Welcome to the GovWallet Redemption API.");

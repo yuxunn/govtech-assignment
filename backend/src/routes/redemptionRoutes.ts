@@ -3,6 +3,6 @@ import RedemptionController from '../controllers/redemptionController';
 
 const router = express.Router();
 
-router.get('/api/redeem/:staffPassId', RedemptionController.redeemOrCheckStatus);
+router.get('/redeem/:staffPassId', RedemptionController.redeemOrCheckStatus);
 
 export default router;
