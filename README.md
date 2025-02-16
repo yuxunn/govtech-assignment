@@ -8,9 +8,9 @@ The **GovWallet Redemption API** is a **Node.js Express** service that facilitat
 - Redemption data is stored in a CSV file for tracking. 
 
 ### Features 
-🎁 Look up staff_pass_id to verify the team's eligibility for redemption of gift. 
-🎁 Check if a team has already redeemed. 
-🎁 Record successful redemptions. 
+🎁 Look up staff_pass_id to verify the team's eligibility for redemption of gift.\
+🎁 Check if a team has already redeemed. \
+🎁 Record successful redemptions. \
 🎁 CSV based data storage.
 
 ### Installation and Setup 
