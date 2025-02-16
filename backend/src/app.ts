@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-    origin: "https://govtech-assignment.vercel.app", // Allow your frontend
+    origin: "*", 
     methods: "GET,POST,OPTIONS", // Ensure preflight requests are handled
     allowedHeaders: "Content-Type,Authorization",
     credentials: true // Allow credentials if needed
