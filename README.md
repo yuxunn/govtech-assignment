@@ -16,7 +16,7 @@ The **GovWallet Redemption API** is a **Node.js Express** service that facilitat
 ### Installation and Setup 
 1. Clone the repository 
 ```
-git clone <https://github.com/yuxunn/govtech-assignment.git>
+git clone https://github.com/yuxunn/govtech-assignment.git
 cd govtech-assignment
 ```
 2. Install dependencies \
