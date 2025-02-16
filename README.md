@@ -14,9 +14,17 @@ Currently, ```main``` branch is the code that minimally satisifies the requireme
 🎁 Record successful redemptions. \
 🎁 CSV based data storage.
 
-### Deployed Preliminarily (Branch feat-3-test-deployment for frontend code)
-Frontend server (Vercel): https://govtech-assignment.vercel.app/
-Backend server (Render): https://govtech-assignment-backend.onrender.com
+### 🍓 Deployment Information
+
+### **Frontend**
+🔗 [GovWallet Frontend (Vercel)](https://govtech-assignment.vercel.app/)
+
+### **Backend**
+🔗 [GovWallet Backend (Render)](https://govtech-assignment-backend.onrender.com)
+
+### **Branch for Deployment**
+🛠️ **Frontend Deployment Branch**: `feat-3-test-deployment`
+
 
 ### Installation and Setup 
 1. Clone the repository 
