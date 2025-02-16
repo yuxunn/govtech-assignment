@@ -10,7 +10,7 @@ const redemptionRoutes_1 = __importDefault(require("./routes/redemptionRoutes"))
 const app = (0, express_1.default)();
 const PORT = process.env.PORT || 3001;
 app.use((0, cors_1.default)({
-    origin: "http://localhost:3000",
+    origin: "https://govtech-assignment.vercel.app",
     methods: "GET,POST",
     allowedHeaders: "Content-Type"
 }));
