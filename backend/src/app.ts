@@ -6,11 +6,7 @@ import redemptionRoutes from "./routes/redemptionRoutes";
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({
-    origin: "http://localhost:3000", 
-    methods: "GET,POST",
-    allowedHeaders: "Content-Type"
-}));app.use(express.json());
+app.use(cors({ origin: "https://govtech-assignment-daofpfo8x-yuxunns-projects.vercel.app" }));
 
 const frontendBuildPath = path.join(__dirname, "../../frontend/build");
 app.use(express.static(frontendBuildPath));
