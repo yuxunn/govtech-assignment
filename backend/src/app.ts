@@ -5,8 +5,11 @@ import redemptionRoutes from "./routes/redemptionRoutes";
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({ origin: "https://govtech-assignment-daofpfo8x-yuxunns-projects.vercel.app" }));
-
+app.use(cors({
+    origin: "https://govtech-assignment.vercel.app", // Only allow requests from your frontend
+    methods: "GET,POST", // Allow specific request methods
+    allowedHeaders: "Content-Type,Authorization" // Allow headers
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
