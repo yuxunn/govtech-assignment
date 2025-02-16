@@ -12,6 +12,7 @@ app.use(cors({
     credentials: true // Allow credentials if needed
 }));
 app.use(express.json());
+app.options("*", cors());
 
 app.get("/", (req, res) => {
     res.send("Welcome to the GovWallet Redemption API.");
