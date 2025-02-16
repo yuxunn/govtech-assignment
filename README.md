@@ -1,7 +1,8 @@
 ### GovSupply & GovWallet Take-Home Assessment
 
 #### Overview 
-The **GovWallet Redemption API** is a **Node.js Express** service that facilitates gift redemptions for teams based off their staff ID as validation. 
+The **GovWallet Redemption API** is a **Node.js Express** service that facilitates gift redemptions for teams based off their staff ID as validation. \
+Currently, ```main``` branch is the code that minimally satisifies the requirements for this assignment. Branch ```feat-3-test-deployment``` is my attempt at deploying the frontend and backend servers, and is currently a work in progress. 
 
 - Each **staff_pass_id** is mapped to a **team_name**
 - Teams can **redeem only once** using any representative from that team. 
@@ -12,6 +13,10 @@ The **GovWallet Redemption API** is a **Node.js Express** service that facilitat
 🎁 Check if a team has already redeemed. \
 🎁 Record successful redemptions. \
 🎁 CSV based data storage.
+
+### Deployed Preliminarily (Branch feat-3-test-deployment for frontend code)
+Frontend server (Vercel): https://govtech-assignment.vercel.app/
+Backend server (Render): https://govtech-assignment-backend.onrender.com
 
 ### Installation and Setup 
 1. Clone the repository 
