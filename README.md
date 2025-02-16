@@ -16,6 +16,15 @@ Currently, ```main``` branch is the code that minimally satisifies the requireme
 
 ### 🍓 Deployment Information
 
+## 📸 Screenshots
+
+### **Frontend UI**
+![Frontend Screenshot](test.png)
+
+### **Backend API Response**
+![Backend Response](test2.png)
+
+
 ### **Frontend**
 🔗 [GovWallet Frontend (Vercel)](https://govtech-assignment.vercel.app/)
 
